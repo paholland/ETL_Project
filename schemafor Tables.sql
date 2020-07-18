@@ -33,7 +33,7 @@ nameFull VARCHAR,
 college VARCHAR,
 heightInches FLOAT,
 weight FLOAT,
-dob VARCHAR,
+dob DATE,
 ageAtDraft FLOAT,
 homeCity VARCHAR,
 homeState TEXT,
@@ -46,7 +46,7 @@ SELECT * FROM draft
 
 -- Create tables for data to be loaded into
 CREATE TABLE 2016 (
-salaryRk FLOAT,
+salaryRk VARCHAR,
 position TEXT,
 team TEXT,
 salary VARCHAR,
@@ -59,7 +59,7 @@ SELECT * FROM 2016
 
 -- Create tables for data to be loaded into
 CREATE TABLE 2017 (
-salaryRk FLOAT,
+salaryRk VARCHAR,
 position TEXT,
 team TEXT,
 salary VARCHAR,
@@ -73,7 +73,7 @@ SELECT * FROM 2017
 
 -- Create tables for data to be loaded into
 CREATE TABLE 2018 (
-salaryRk FLOAT,
+salaryRk VARCHAR,
 position TEXT,
 team TEXT,
 salary VARCHAR,
@@ -87,7 +87,7 @@ SELECT * FROM 2018
 
 -- Create tables for data to be loaded into
 CREATE TABLE 2019 (
-salaryRk FLOAT,
+salaryRk VARCHAR,
 position TEXT,
 team TEXT,
 salary VARCHAR,
