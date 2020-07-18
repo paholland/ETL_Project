@@ -1,4 +1,4 @@
--- Create tables for data to be loaded into
+ -- Create tables for data to be loaded into
 CREATE TABLE passer (
 passId INT,
 playId INT,
@@ -19,7 +19,7 @@ SELECT * FROM passer
 
 
 CREATE TABLE draft (
-playerId INT FOREIGN KEY,
+playerId INT,
 draft INT,
 round FLOAT,
 pick INT,
@@ -45,7 +45,7 @@ SELECT * FROM draft
 
 
 -- Create tables for data to be loaded into
-CREATE TABLE 2016 (
+CREATE TABLE salary_2016 (
 id SERIAL PRIMARY KEY, 
 salaryRk VARCHAR,
 position TEXT,
@@ -55,11 +55,11 @@ player_name VARCHAR
 );
 
 -- Show that it imported correctly
-SELECT * FROM 2016
+SELECT * FROM salary_2016
 
 
 -- Create tables for data to be loaded into
-CREATE TABLE 2017 (
+CREATE TABLE salary_2017 (
 id SERIAL PRIMARY KEY,  
 salaryRk VARCHAR,
 position TEXT,
@@ -69,12 +69,12 @@ player_name VARCHAR
 );
 
 -- Show that it imported correctly
-SELECT * FROM 2017
+SELECT * FROM salary_2017
 
 
 
 -- Create tables for data to be loaded into
-CREATE TABLE 2018 (
+CREATE TABLE salary_2018 (
 id SERIAL PRIMARY KEY,
 salaryRk VARCHAR,
 position TEXT,
@@ -84,12 +84,12 @@ player_name VARCHAR
 );
 
 -- Show that it imported correctly
-SELECT * FROM 2018
+SELECT * FROM salary_2018
 
 
 
 -- Create tables for data to be loaded into
-CREATE TABLE 2019 (
+CREATE TABLE salary_2019 (
 id SERIAL PRIMARY KEY,
 salaryRk VARCHAR,
 position TEXT,
@@ -99,7 +99,4 @@ player_name VARCHAR
 );
 
 -- Show that it imported correctly
-SELECT * FROM 2019
-
-
-
+SELECT * FROM salary_2019
